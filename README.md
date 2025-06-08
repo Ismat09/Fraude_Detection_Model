@@ -5,14 +5,14 @@ This project builds a machine learning pipeline to detect fraudulent credit card
 
 Fraud detection is a critical component of modern financial systems, helping prevent millions in losses annually
 
-Key features:
+## Key features:
 
 Real-time fraud prediction from user inputs
 Used **sklearn pipeline** for robust preprocessing & model deployment
 Interactive **Streamlit app** lets users simulate transaction scenarios and test fraud risk
 Focused on identifying suspicious behavior in **TRANSFER** and **CASH_OUT** transactions
 
-**Results:**
+## Results:
 - Achieved good recall on highly imbalanced data
 - Interactive app makes the project suitable for demo to recruiters / clients
 - Supports risk-based decisioning for financial transactions
