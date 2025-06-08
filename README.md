@@ -16,13 +16,14 @@ Focused on identifying suspicious behavior in **TRANSFER** and **CASH_OUT** tran
 - Achieved good recall on highly imbalanced data
 - Interactive app makes the project suitable for demo to recruiters / clients
 - Supports risk-based decisioning for financial transactions
-Achieved good recall on highly imbalanced data and interative App.
+-Achieved good recall on highly imbalanced data and interative App.
+
 **Streamlit App - 95% Accuracy**
-How to use:
--Select Transaction Type from dropdown.
--Enter Transaction Amount.
--Enter sender and receiver balances.
--Click Predict.
+## How to use:
+- Select Transaction Type from dropdown.
+- Enter Transaction Amount.
+- Enter sender and receiver balances.
+- Click Predict.
 
 The app will display whether the transaction is predicted as Fraud (0) or Not Fraud(1).
 
