@@ -7,10 +7,44 @@ Fraud detection is a critical component of modern financial systems, helping pre
 
 ## Key features:
 
-Real-time fraud prediction from user inputs
-Used **sklearn pipeline** for robust preprocessing & model deployment
-Interactive **Streamlit app** lets users simulate transaction scenarios and test fraud risk
-Focused on identifying suspicious behavior in **TRANSFER** and **CASH_OUT** transactions
+-Real-time fraud prediction from user inputs
+-Used **sklearn pipeline** for robust preprocessing & model deployment
+-Interactive **Streamlit app** lets users simulate transaction scenarios and test fraud risk
+-Focused on identifying suspicious behavior in **TRANSFER** and **CASH_OUT** transactions
+
+## Data Preprocessing
+-Reads in AIML Dataset.csv
+Data cleaning steps:
+-Missing value checks
+-Feature engineering: creates balanceDiffOrig and balanceDiffDest
+-Drops unneeded columns: "step", "nameOrig", "nameDest", "isFlaggedFraud"
+-One-hot encoding for "type" categorical variable
+-Standard scaling for numerical features
+
+## 📌 Exploratory Data Analysis (EDA)
+## Visualizations of:
+- Transaction types distribution
+- Fraud rate per transaction type
+- Transaction amount distribution (log)
+- Fraud over time
+- Correlation matrix
+- Fraud distribution in "TRANSFER" and "CASH_OUT" types
+
+## Business insights:
+- Fraud concentrated in "TRANSFER" and "CASH_OUT"
+- Suspicious balance changes detected (zero_after_transfer subset)
+
+## 📌 Model Training & Evaluation
+## Model: Logistic Regression with balanced class weights
+- Pipeline used:
+- ColumnTransformer for preprocessing
+- LogisticRegression model
+## Model performance:
+- Classification report: good recall for fraud detection, precision could improve
+- Confusion matrix printed
+- Train/test split: 70/30, stratified
+
+Pipeline exported as: fraud_detection_pipleine.pkl (minor typo → should be pipeline)
 
 ## Results:
 - Achieved good recall on highly imbalanced data
