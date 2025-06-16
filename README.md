@@ -44,7 +44,7 @@ Data cleaning steps:
 - Confusion matrix printed
 - Train/test split: 70/30, stratified
 
-Pipeline exported as: fraud_detection_pipleine.pkl (minor typo → should be pipeline)
+Pipeline exported as: fraud_detection_pipeline.pkl 
 
 ## Results:
 - Achieved good recall on highly imbalanced data
